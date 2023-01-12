@@ -16,12 +16,8 @@ import sklearn
 from sklearn.preprocessing import StandardScaler
 import streamlit as st
 
-#app = Flask(__name__)
-crop_recommendation_model_path = 'models/RandomForest.pkl'
-crop_recommendation_model = pickle.load(
-    open(crop_recommendation_model_path, 'rb'))
-#crop_recommendation_model = pickle.load(open('RandomForest.pkl', 'rb'))
-#@app.route('/',methods=['GET'])
+crop_recommendation_model = pickle.load(open('RandomForest.pkl', 'rb'))
+
 def welcome():
     return "Welcome All"
 
